@@ -1,11 +1,12 @@
 /**
  * Cookie Clicker Optimal Return on Investment Highlighter / Auto Player
 
- * @version            0.2
+ * @version            0.2.1
  * @author             nietdaan
  * @description        Highlights the name of the building with the highest
                        ROI in green. Can also auto-play the game for you.
  * @usage              Copy-paste into console. Stop with clearInterval(loop);
+                       Alternative: use window.Game.LoadMod(link_to_this_script);
  * @option autoBuy     Set autoBuy to true to let script buy buildings
                        automatically
  * @option autoUpgrade Set autoUpgrade to true to let script buy available
@@ -76,3 +77,6 @@ function determineOptimalROI() {
 
 // Execute loop every 100 milliseconds
 var loop = setInterval(determineOptimalROI, 100);
+
+// Win 'Third-party' achievement for using a mod
+window.Game.Win('Third-party');
