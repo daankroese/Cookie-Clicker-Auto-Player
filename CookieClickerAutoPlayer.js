@@ -1,6 +1,6 @@
 /**
  * Cookie Clicker Optimal Return on Investment Highlighter / Auto Player
- * @version            0.3
+ * @version            0.3.1
  * @author             nietdaan
  * @description        - Highlights the name of the building with the highest
                          ROI in green. Can also auto-play the game for you.
