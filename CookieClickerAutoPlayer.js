@@ -94,6 +94,12 @@ function displayWrinklerTotal() {
     document.getElementById("wrinklerTotal").innerHTML = "Wrinkler total: " + Beautify(total);
 }
 
+// Add style to make CpS more legible when there are wrinklers on screen
+var style       = document.createElement('style');
+style.type      = 'text/css';
+style.innerHTML = '#cookies .warning {background-color: white; padding: 5px; position: absolute; width: 250px; left: 50%; margin-left: -130px;}';
+document.getElementsByTagName('head')[0].appendChild(style);
+
 // Stop all functionality
 function CCAP_stop() {
     for (var key in intervals) {
